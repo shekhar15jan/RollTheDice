@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textRollResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="345dp"
-        android:text="@string/no_roll"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/btnRollDice"
-        app:layout_constraintStart_toStartOf="@+id/btnRollDice"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnRollDice"
         android:layout_width="wrap_content"
@@ -24,6 +13,18 @@
         android:layout_marginTop="16dp"
         android:text="@string/roll_dice"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRollResult" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/diceview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
