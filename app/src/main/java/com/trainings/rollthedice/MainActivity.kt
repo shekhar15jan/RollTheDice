@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val rollResult = dice.roll()
         val diceImage: ImageView = findViewById(R.id.imageView4)
 
+        //detaermine drawable id based on dice number
         val diceRoll = when (rollResult) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
